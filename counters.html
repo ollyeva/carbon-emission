@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counters</title>
+    <link rel="stylesheet" href="css/counter-style.css" />
+    <link rel="javascript" href="js/main.js" />
+  </head>
+  <body>
+    <div class="center-align">
+      <p class="header">
+        Live Counters 
+        <p class="mins">(each and every second)</p>
+      </p>
+      <div class="counter">
+        
+        <!--    GOOGLE    -->
+
+        <center>
+          <div id="google"></div>
+          <center>
+            <script>
+              var c = 0;
+              var visitsSec = 83093;
+
+              var co2 = 0.0108171;
+
+              setInterval(function () {
+                document.getElementById("google").innerHTML =
+                  "GOOGLE EMITS" +
+                  "<u><strong> " +
+                  c.toFixed(2) +
+                  "</strong></u> " +
+                  "KG CO2e";
+                console.log(c);
+                c = c + visitsSec * co2;
+              }, 1000);
+            </script>
+          </center>
+        </center>
+
+        <br />        
+        <!--    EMAILS    -->
+
+        <center>
+          <div id="emails"></div>
+          <center>
+            <script>
+              var c = 0;
+              var visitsSec = 2909446;
+
+              var co2 = 0.004;
+
+              setInterval(function () {
+                document.getElementById("emails").innerHTML =
+                  "EMALING EMITS" +
+                  "<u><strong> " +
+                  c.toFixed(2) +
+                  "</strong></u> " +
+                  "KG CO2e";
+                console.log(c);
+                c = c + visitsSec * co2;
+              }, 1000);
+            </script>
+          </center>
+        </center>
+
+        <br />
+        <!--    YOUTUBE    -->
+
+        <center>
+          <div id="youtube"></div>
+          <center>
+            <script>
+              var c = 0;
+              var visitsSec = 83985;
+
+              var co2 = 0.001;
+
+              setInterval(function () {
+                document.getElementById("youtube").innerHTML =
+                  "YOUTUBE EMITS" +
+                  "<u><strong> " +
+                  c.toFixed(2) +
+                  "</strong></u> " +
+                  "KG CO2e";
+                console.log(c);
+                c = c + visitsSec * co2;
+              }, 1000);
+            </script>
+          </center>
+        </center>
+      </div>
+    </div>
+  </body>
+</html>
